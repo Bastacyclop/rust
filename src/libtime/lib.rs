@@ -10,7 +10,8 @@
 
 //! Simple time handling.
 
-#![crate_id = "time#0.11.0-pre"]
+#![crate_id = "time#0.11.0-pre"] // NOTE: remove after stage0
+#![crate_name = "time"]
 #![experimental]
 
 #![crate_type = "rlib"]
@@ -21,6 +22,7 @@
        html_root_url = "http://doc.rust-lang.org/",
        html_playground_url = "http://play.rust-lang.org/")]
 #![feature(phase)]
+#![allow(unused_attribute)] // NOTE: remove after stage0
 
 #[cfg(test)] extern crate debug;
 #[cfg(test)] #[phase(plugin, link)] extern crate log;

@@ -9,11 +9,13 @@
 // except according to those terms.
 
 #![feature(globs)]
-#![crate_id = "libc#0.11.0-pre"]
+#![crate_id = "libc#0.11.0-pre"] // NOTE: remove after a stage0 snap
+#![crate_name = "libc"]
 #![experimental]
 #![no_std] // we don't need std, and we can't have std, since it doesn't exist
            // yet. std depends on us.
 #![crate_type = "rlib"]
+#![allow(unused_attribute)] // NOTE: remove after stage0
 
 /*!
 * Bindings for the C standard library and other platform libraries

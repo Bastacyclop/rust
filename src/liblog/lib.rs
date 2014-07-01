@@ -105,7 +105,8 @@ if logging is disabled, none of the components of the log will be executed.
 
 */
 
-#![crate_id = "log#0.11.0-pre"]
+#![crate_id = "log#0.11.0-pre"] // NOTE: Remove after stage0
+#![crate_name = "log"]
 #![experimental]
 #![license = "MIT/ASL2"]
 #![crate_type = "rlib"]
@@ -114,7 +115,7 @@ if logging is disabled, none of the components of the log will be executed.
        html_favicon_url = "http://www.rust-lang.org/favicon.ico",
        html_root_url = "http://doc.rust-lang.org/",
        html_playground_url = "http://play.rust-lang.org/")]
-
+#![allow(unused_attribute)] // NOTE: remove after stage0
 #![feature(macro_rules)]
 #![deny(missing_doc)]
 
