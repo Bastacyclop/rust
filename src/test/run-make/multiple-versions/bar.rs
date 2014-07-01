@@ -8,7 +8,7 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-// no-prefer-dynamic
+extern crate foo1;
+extern crate foo2;
 
-#![crate_id = "url#0.11.0-pre"]
-#![crate_type = "dylib"]
+fn main() {}
